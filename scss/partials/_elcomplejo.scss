@@ -1,0 +1,113 @@
+.iconos-container{
+    margin-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width:600px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .icon-card{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        @media(max-width:600px){
+            width: 100%;
+
+        }
+
+        img{
+            margin-bottom: 15px;
+            width: 75px;
+        }
+
+        p{
+            font-family: nth($fonts, 1);
+            color: nth($colores, 1);
+        }
+    }
+
+
+}
+
+.gallery-grid{
+    .gallery{
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 0.5em; /*para separar entre foto y foto*/
+        row-gap: 0.5em;
+        grid-auto-rows: 300px;
+
+        @media(max-width:600px){
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            column-gap: 0.5em; /*para separar entre foto y foto*/
+            row-gap: 0.5em;
+            grid-auto-rows: 300px;
+        }
+
+        .foto{
+            width: 100%;
+            transition: transform .9s;
+
+            @media(max-width:600px){
+                width: 100%;
+            }
+        
+            &:hover{
+                transform: scale(1.1);
+
+                @media(max-width:600px){
+                    transform: scale(1);
+                }
+            }
+        
+        }
+        
+     
+        
+        .foto img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /*para que no se distorsione*/
+        }
+    
+    
+        .foto:nth-child(2){
+            grid-column-start: span 2;
+        }
+        
+        .foto:nth-child(4){
+            grid-column-start: span 2;
+        }
+        
+        .foto:nth-child(7){
+            grid-column-start: span 2;
+        }
+        .foto:nth-child(5){
+            grid-column-start: span 2;
+        }
+    
+    }
+
+
+   
+}
+

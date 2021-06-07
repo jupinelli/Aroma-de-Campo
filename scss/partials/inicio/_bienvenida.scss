@@ -1,0 +1,67 @@
+.bienvenida{
+    background-image: url(https://i.ibb.co/v1w6jTd/OLYMPUS-DIGITAL-CAMERA.jpg);
+    background-attachment: fixed;
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: last baseline;
+    align-items: flex-end;
+
+    h1{
+        @media (max-width:600px){
+        font-size: 3em;
+        }
+    }
+
+    .box{
+        flex-wrap: wrap;
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        text-shadow: grey 2px 2px 2px;
+        /*border: 1px solid pink;*/
+        
+        @media (max-width:600px){
+            width: 100%;
+            padding: 0px 10px;
+        }
+     
+    }
+}
+
+.welcome-container{
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+
+    @media (max-width:600px){
+        display: none;
+    }
+
+    div img{
+        width: 600px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textoBienvenida{
+        padding: 150px;
+
+        h3{
+            font-size: 2em;
+            font-family: 'Playfair Display', serif;
+            color: #355d66;
+        }
+
+        p{
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            color: #355d66;
+        }
+    }
+
+
+
+}

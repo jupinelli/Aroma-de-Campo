@@ -1,0 +1,6 @@
+@mixin h1($fsize, $tcolor, $fweight, $ffamily){
+    font-size: $fsize;
+    color: $tcolor;
+    font-weight: $fweight;
+    font-family: $ffamily;
+}

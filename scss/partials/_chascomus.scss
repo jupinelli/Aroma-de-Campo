@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-chasco{
+    color: nth($colores,1);
+    font-size: 3em;
+    text-align: center;
+
+    @media (max-width:600px){
+        margin-top: 20px;
+        font-size: 2.5em;
+    }
+}
+
+.chascomus-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    @media (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+
+    .box3, .box2, .box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100%/3);
+
+        @media (max-width:600px){
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 30px;
+
+            @media (max-width:600px){
+                padding: 0;
+            }
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            background-color: nth($colores , 1);
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 10%;
+            border-radius: 10px;
+
+            @media (max-width:600px){
+                position: relative;
+                bottom: 30px;
+       
+            }
+
+
+
+            h3{
+                color: white;
+                font-size: 1.5em;
+            }
+
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+    
+  
+    }
+
+}
+
+.iconos-chascomus{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    .icon-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: calc(100%/3);
+        padding:30px;
+
+        img{
+            width: 75px;
+        }
+
+        p{
+            text-align: center;
+
+        }
+    }
+
+}

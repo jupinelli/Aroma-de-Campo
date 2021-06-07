@@ -1,0 +1,29 @@
+.box-reservas{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #beb3a1; 
+    color: #fff;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    input{
+        padding: 20px 20px;
+        border: 0;
+        background-color: #beb3a1;
+        color: #fff;
+    }
+
+    button{
+        background-color: #beb3a1;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+
+}

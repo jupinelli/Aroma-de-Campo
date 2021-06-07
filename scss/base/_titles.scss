@@ -1,0 +1,13 @@
+@import '../base/mixins';
+
+h1{
+
+
+    @include h1(5em, white,bold,'Playfair Display')
+   
+}
+
+h2, h3, h4{
+    color: #355d66;
+    font-family: 'Playfair Display', serif;
+}

@@ -1,0 +1,29 @@
+
+/*BASE*/
+@import 'base/reset';
+@import 'base/navbar';
+@import 'base/titles';
+@import 'base/footer';
+@import 'base/colors-fonts';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/size';
+
+/*INDEX - PAGINA DE INICIO*/
+@import 'partials/inicio/bienvenida';
+@import 'partials/inicio/nuestrascabanas';
+@import 'partials/inicio/servicios';
+@import 'partials/inicio/testimonios';
+@import 'partials/inicio/ubicacion-contacto';
+@import 'partials/inicio/form-reservas';
+
+/*PAGINA NUESTRAS CABANAS*/
+@import 'partials/section-cabanas.scss';
+
+/*PAGINA EL COMPLEJO*/
+@import 'partials/elcomplejo';
+
+/*PAGINA CHASCOMUS*/
+@import 'partials/chascomus';
+
+

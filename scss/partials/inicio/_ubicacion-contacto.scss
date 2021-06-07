@@ -1,0 +1,49 @@
+
+.contact-form>b{
+    font-size: 1.5em;
+    color: #355d66;
+    font-family: 'Playfair Display', serif;
+}
+
+.ubicacion{
+    width: 50%;
+
+    @media (max-width:600px){
+        
+        width: 100%;
+        
+    }
+}
+
+.mapa{
+    width: 100%;
+    height: 100%;
+
+    @media (max-width:600px){
+        height: 100%;
+    }
+
+}
+
+.ubicacion-contact{
+    display: flex;
+    @media (max-width:600px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+.contact-form{
+    font-family: 'Roboto', sans-serif;
+    color: #0c3e4d;
+    flex-wrap: wrap;
+    padding: 20px;
+    /*border: 1px red solid;*/
+    width: 50%;
+    justify-content: center;
+
+    @media (max-width:600px){
+        width: 100%;
+    }
+}

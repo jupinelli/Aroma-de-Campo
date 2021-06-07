@@ -1,0 +1,88 @@
+.bg-cabanas{
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    @media(max-width:600px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+    .titulo-cabanas{
+        font-family: 'Roboto';
+        color: nth($colores, 2);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.3em;
+    }
+
+    .subtitulo-cabanas{
+        font-size: 1em;
+        font-family: 'Roboto';
+        color: nth($colores, 1);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    
+    }
+    
+}
+
+
+.comodidades-container{
+    display: flex;
+    width: 100%;
+    padding-right: 5%;
+
+    p{  
+        font-size: 1.1em;
+        color: #0c3e4d;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+}
+
+
+.imagenes-container{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media (max-width:600px){
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    img{
+        width: $ancho-base / 3;
+        transition: transform .9s;
+
+        &:hover{
+            transform: scale(1.1); 
+        }
+
+        @media (max-width:600px){
+            width: 100%;
+
+            &:hover{
+                transform: scale(1);
+            }
+        }
+
+    }
+
+
+}

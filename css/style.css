@@ -1,0 +1,664 @@
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.whatsappButton a img {
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.btn {
+  background-color: #355d66;
+  color: #fff;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #0c3e4d;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+header .navbar {
+  width: 100%;
+  background-color: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 70px;
+  box-shadow: 0px 13px 12px -10px rgba(0, 0, 0, 0.08);
+}
+header .navbar #navbarNavAltMarkup {
+  justify-content: flex-end;
+  background-color: #fff;
+  width: 100%;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link {
+  color: #355d66;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link.active {
+  color: #0c3e4d;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link:hover {
+  color: #b46c51;
+}
+header .navbar-brand .logo {
+  width: 200px;
+  max-height: 100px;
+}
+@media (max-width: 600px) {
+  header .navbar-brand .logo {
+    display: none;
+  }
+}
+header .navbar-brand .logo1 {
+  height: 50px;
+}
+
+h1 {
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+  font-family: "Playfair Display";
+}
+
+h2, h3, h4 {
+  color: #355d66;
+  font-family: "Playfair Display", serif;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  line-height: 2em;
+  text-decoration: none;
+  background-color: #beb3a1;
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+  color: #ffffff;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer a:hover {
+  color: #fff;
+}
+footer .footer-container {
+  padding-top: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .suscribe {
+  flex-direction: column;
+  width: 100%;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+footer .footer-container .suscribe .titulos-footer {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+footer .footer-container .suscribe form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  footer .footer-container .suscribe form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer .footer-container .suscribe button {
+  background-color: #beb3a1;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+footer .footer-container .footer-consultas {
+  flex-direction: column;
+  width: 100%;
+}
+footer .footer-container .footer-consultas .titulos-footer {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+footer .footer-container .footer-consultas .datos {
+  margin-bottom: 1px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+footer .footer-container .footer-consultas .social-media {
+  font-size: 2em;
+}
+footer .footer-container .footer-consultas .logo-footer {
+  width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer .footer-container .suscribe, footer .footer-container .footer-consultas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/*INDEX - PAGINA DE INICIO*/
+.bienvenida {
+  background-image: url(https://i.ibb.co/v1w6jTd/OLYMPUS-DIGITAL-CAMERA.jpg);
+  background-attachment: fixed;
+  height: calc(100vh - 70px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: last baseline;
+  align-items: flex-end;
+}
+@media (max-width: 600px) {
+  .bienvenida h1 {
+    font-size: 3em;
+  }
+}
+.bienvenida .box {
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  text-shadow: grey 2px 2px 2px;
+  /*border: 1px solid pink;*/
+}
+@media (max-width: 600px) {
+  .bienvenida .box {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+.welcome-container {
+  width: 100%;
+  display: flex;
+  background-color: #eee;
+}
+@media (max-width: 600px) {
+  .welcome-container {
+    display: none;
+  }
+}
+.welcome-container div img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+}
+.welcome-container .textoBienvenida {
+  padding: 150px;
+}
+.welcome-container .textoBienvenida h3 {
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+  color: #355d66;
+}
+.welcome-container .textoBienvenida p {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  color: #355d66;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: "Roboto";
+  color: #b46c51;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+.text-color {
+  color: #444242;
+  font-family: "Roboto";
+}
+
+.card {
+  height: 750px;
+}
+
+.servicios {
+  background-color: #eee;
+  width: 100%;
+  color: #355d66;
+}
+
+.subtitulos-servicios {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+.titulo-testimonios {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0;
+  padding-top: 50px;
+}
+
+.reviews, .titulo-testimonios {
+  background-color: #355d66;
+}
+
+.reviews > .carousel > .carousel-inner > .carousel-item {
+  font-size: 1.7em;
+  color: #fff;
+  padding-bottom: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+  font-family: "Playfair Display", serif;
+}
+@media (max-width: 600px) {
+  .reviews > .carousel > .carousel-inner > .carousel-item {
+    font-size: 1.2em;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+}
+
+.contact-form > b {
+  font-size: 1.5em;
+  color: #355d66;
+  font-family: "Playfair Display", serif;
+}
+
+.ubicacion {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .ubicacion {
+    width: 100%;
+  }
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .mapa {
+    height: 100%;
+  }
+}
+
+.ubicacion-contact {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .ubicacion-contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.contact-form {
+  font-family: "Roboto", sans-serif;
+  color: #0c3e4d;
+  flex-wrap: wrap;
+  padding: 20px;
+  /*border: 1px red solid;*/
+  width: 50%;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
+.box-reservas {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background-color: #beb3a1;
+  color: #fff;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.box-reservas input {
+  padding: 20px 20px;
+  border: 0;
+  background-color: #beb3a1;
+  color: #fff;
+}
+.box-reservas button {
+  background-color: #beb3a1;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/*PAGINA NUESTRAS CABANAS*/
+.bg-cabanas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+@media (max-width: 600px) {
+  .bg-cabanas {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.bg-cabanas .titulo-cabanas {
+  font-family: "Roboto";
+  color: #b46c51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+}
+.bg-cabanas .subtitulo-cabanas {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: #355d66;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comodidades-container {
+  display: flex;
+  width: 100%;
+  padding-right: 5%;
+}
+.comodidades-container p {
+  font-size: 1.1em;
+  color: #0c3e4d;
+  font-family: "Roboto", sans-serif;
+}
+
+.imagenes-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (max-width: 600px) {
+  .imagenes-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.imagenes-container img {
+  width: 33.3333333333%;
+  transition: transform 0.9s;
+}
+.imagenes-container img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .imagenes-container img {
+    width: 100%;
+  }
+  .imagenes-container img:hover {
+    transform: scale(1);
+  }
+}
+
+/*PAGINA EL COMPLEJO*/
+.iconos-container {
+  margin-top: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .iconos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.iconos-container .icon-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+@media (max-width: 600px) {
+  .iconos-container .icon-card {
+    width: 100%;
+  }
+}
+.iconos-container .icon-card img {
+  margin-bottom: 15px;
+  width: 75px;
+}
+.iconos-container .icon-card p {
+  font-family: "Roboto";
+  color: #355d66;
+}
+
+.gallery-grid .gallery {
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5em;
+  /*para separar entre foto y foto*/
+  row-gap: 0.5em;
+  grid-auto-rows: 300px;
+}
+@media (max-width: 600px) {
+  .gallery-grid .gallery {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.5em;
+    /*para separar entre foto y foto*/
+    row-gap: 0.5em;
+    grid-auto-rows: 300px;
+  }
+}
+.gallery-grid .gallery .foto {
+  width: 100%;
+  transition: transform 0.9s;
+}
+@media (max-width: 600px) {
+  .gallery-grid .gallery .foto {
+    width: 100%;
+  }
+}
+.gallery-grid .gallery .foto:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .gallery-grid .gallery .foto:hover {
+    transform: scale(1);
+  }
+}
+.gallery-grid .gallery .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*para que no se distorsione*/
+}
+.gallery-grid .gallery .foto:nth-child(2) {
+  grid-column-start: span 2;
+}
+.gallery-grid .gallery .foto:nth-child(4) {
+  grid-column-start: span 2;
+}
+.gallery-grid .gallery .foto:nth-child(7) {
+  grid-column-start: span 2;
+}
+.gallery-grid .gallery .foto:nth-child(5) {
+  grid-column-start: span 2;
+}
+
+/*PAGINA CHASCOMUS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-chasco {
+  color: #355d66;
+  font-size: 3em;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .titulo-chasco {
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+}
+
+.chascomus-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+@media (max-width: 600px) {
+  .chascomus-box {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.chascomus-box .box3, .chascomus-box .box2, .chascomus-box .box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100%/3);
+}
+@media (max-width: 600px) {
+  .chascomus-box .box3, .chascomus-box .box2, .chascomus-box .box1 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+.chascomus-box .box3 img, .chascomus-box .box2 img, .chascomus-box .box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 30px;
+}
+@media (max-width: 600px) {
+  .chascomus-box .box3 img, .chascomus-box .box2 img, .chascomus-box .box1 img {
+    padding: 0;
+  }
+}
+.chascomus-box .box3 div, .chascomus-box .box2 div, .chascomus-box .box1 div {
+  display: flex;
+  flex-direction: column;
+  background-color: #355d66;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10%;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .chascomus-box .box3 div, .chascomus-box .box2 div, .chascomus-box .box1 div {
+    position: relative;
+    bottom: 30px;
+  }
+}
+.chascomus-box .box3 div h3, .chascomus-box .box2 div h3, .chascomus-box .box1 div h3 {
+  color: white;
+  font-size: 1.5em;
+}
+.chascomus-box .box3 div p, .chascomus-box .box2 div p, .chascomus-box .box1 div p {
+  text-align: center;
+  color: white;
+}
+
+.iconos-chascomus {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.iconos-chascomus .icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100%/3);
+  padding: 30px;
+}
+.iconos-chascomus .icon-card img {
+  width: 75px;
+}
+.iconos-chascomus .icon-card p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
