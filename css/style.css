@@ -214,7 +214,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   display: flex;
   background-color: #eee;
 }
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   .welcome-container {
     display: none;
   }
@@ -559,10 +559,15 @@ h6 {
   padding: 0;
 }
 
+video {
+  width: 100%;
+}
+
 .titulo-chasco {
   color: #355d66;
   font-size: 3em;
   text-align: center;
+  margin-top: 20px;
 }
 @media (max-width: 600px) {
   .titulo-chasco {
@@ -571,13 +576,17 @@ h6 {
   }
 }
 
+@media (max-width: 960px) {
+  div video {
+    display: none;
+  }
+}
+
 .chascomus-box {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 @media (max-width: 600px) {
   .chascomus-box {
@@ -617,48 +626,102 @@ h6 {
   flex-direction: column;
   background-color: #355d66;
   width: 70%;
+  height: 350px;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: 10%;
-  border-radius: 10px;
+  padding: 15px;
 }
 @media (max-width: 600px) {
   .chascomus-box .box3 div, .chascomus-box .box2 div, .chascomus-box .box1 div {
     position: relative;
     bottom: 30px;
+    padding: 10px;
+    height: 100%;
   }
 }
 .chascomus-box .box3 div h3, .chascomus-box .box2 div h3, .chascomus-box .box1 div h3 {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-family: "roboto";
+  font-weight: 400;
+  text-align: center;
 }
 .chascomus-box .box3 div p, .chascomus-box .box2 div p, .chascomus-box .box1 div p {
+  font-family: "roboto";
   text-align: center;
+  color: white;
+  font-weight: 350;
+  width: 90%;
+  font-size: 0.9em;
+}
+.chascomus-box .box3 div p a, .chascomus-box .box2 div p a, .chascomus-box .box1 div p a {
   color: white;
 }
 
-.iconos-chascomus {
+.container2-chascomus img {
+  width: 100%;
+  object-fit: cover;
+}
+.container2-chascomus .card {
+  height: 100%;
+}
+
+.videos-chasco {
+  width: 100%;
+  height: 300px;
+}
+
+.chascomusapp {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-.iconos-chascomus .icon-card {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: calc(100%/3);
-  padding: 30px;
+  width: 100%;
+  text-align: justify;
+  padding: 5%;
 }
-.iconos-chascomus .icon-card img {
-  width: 75px;
+@media (max-width: 600px) {
+  .chascomusapp {
+    width: 100%;
+  }
 }
-.iconos-chascomus .icon-card p {
-  text-align: center;
+@media (max-width: 600px) {
+  .chascomusapp p {
+    display: none;
+  }
+}
+.chascomusapp img {
+  width: 200px;
+}
+.chascomusapp h5 {
+  text-transform: uppercase;
+  color: #b46c51;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .chascomusapp h5 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+.chascomusapp a {
+  text-decoration: none;
+}
+.chascomusapp .link-descarga {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  .chascomusapp .link-descarga {
+    justify-content: center;
+  }
+}
+.chascomusapp .link-descarga a {
+  margin: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

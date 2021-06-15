@@ -4,10 +4,15 @@
     padding: 0;
 }
 
+video{
+    width: 100%;
+}
+
 .titulo-chasco{
     color: nth($colores,1);
     font-size: 3em;
     text-align: center;
+    margin-top: 20px;
 
     @media (max-width:600px){
         margin-top: 20px;
@@ -15,13 +20,19 @@
     }
 }
 
+div video{
+    @media (max-width: 960px){
+        display: none;
+    }
+}
+
+
 .chascomus-box{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
+
 
     @media (max-width:600px){
         display: flex;
@@ -37,6 +48,7 @@
         justify-content: center;
         align-items: center;
         width: calc(100%/3);
+
 
         @media (max-width:600px){
             width: 100%;
@@ -60,28 +72,41 @@
             flex-direction: column;
             background-color: nth($colores , 1);
             width: 70%;
+            height: 350px;
             justify-content: center;
             align-items: center;
             position: relative;
             bottom: 10%;
-            border-radius: 10px;
+            padding: 15px;
 
+            
             @media (max-width:600px){
                 position: relative;
                 bottom: 30px;
-       
+                padding: 10px;
+                height: 100%;
             }
-
-
-
+             
             h3{
                 color: white;
-                font-size: 1.5em;
+                font-size: 1.3em;
+                font-family: 'roboto';
+                font-weight: 400;
+                text-align: center;
             }
 
             p{
+                font-family: 'roboto';
                 text-align: center;
                 color: white;
+                font-weight: 350;
+                width: 90%;
+                font-size: 0.9em;
+
+                a{
+                    color: white;
+                }
+
             }
         }
     
@@ -90,30 +115,74 @@
 
 }
 
-.iconos-chascomus{
+.container2-chascomus{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card{
+        height: 100%;
+    }
+}
+
+.videos-chasco{
+    width: 100%;
+    height: 300px;
+}
+
+.chascomusapp{
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    padding: 5%;
 
-    .icon-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: calc(100%/3);
-        padding:30px;
+    @media (max-width: 600px){
+        width: 100%;
+    }
 
-        img{
-            width: 75px;
+    p{
+        @media (max-width: 600px){
+            display: none;
         }
+    }
 
-        p{
+    img{
+        width: 200px;
+    }
+
+    h5{
+        text-transform: uppercase;
+        color: nth($colores, 2);
+        font-weight: 700;
+
+        @media (max-width: 600px){
+            font-size: 1.3em;
             text-align: center;
 
         }
     }
 
+    a{
+        text-decoration: none;
+        
+    }
+
+    .link-descarga{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @media (max-width: 600px){
+            justify-content: center;
+        }
+        
+        a{
+            margin: 7px;
+        }
+    }
 }
