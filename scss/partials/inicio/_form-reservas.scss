@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: flex-end;
 
+    @media (max-width: 600px){
+        display: none;
+    }
+
     input{
         padding: 20px 20px;
         border: 0;

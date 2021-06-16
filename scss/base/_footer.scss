@@ -70,6 +70,8 @@ footer{
     .footer-consultas{
         @extend %flexbox;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
                 
 
@@ -78,6 +80,7 @@ footer{
             text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 1.2em;
+            text-align: center;
         }
 
         .datos{

@@ -16,7 +16,7 @@ video{
 
     @media (max-width:600px){
         margin-top: 20px;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
@@ -141,17 +141,23 @@ div video{
     padding: 5%;
 
     @media (max-width: 600px){
+        padding: 0;
         width: 100%;
     }
 
     p{
         @media (max-width: 600px){
             display: none;
+
         }
     }
 
     img{
         width: 200px;
+
+        @media (max-width: 600px){
+            width: 120px;
+        }
     }
 
     h5{
@@ -161,7 +167,7 @@ div video{
 
         @media (max-width: 600px){
             font-size: 1.3em;
-            text-align: center;
+            text-align: start;
 
         }
     }

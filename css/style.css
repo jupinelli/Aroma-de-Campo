@@ -148,6 +148,8 @@ footer .footer-container .suscribe button {
 }
 footer .footer-container .footer-consultas {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 footer .footer-container .footer-consultas .titulos-footer {
@@ -155,6 +157,7 @@ footer .footer-container .footer-consultas .titulos-footer {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.2em;
+  text-align: center;
 }
 footer .footer-container .footer-consultas .datos {
   margin-bottom: 1px;
@@ -191,7 +194,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 @media (max-width: 600px) {
   .bienvenida h1 {
-    font-size: 3em;
+    font-size: 2.9em;
   }
 }
 .bienvenida .box {
@@ -363,6 +366,11 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+@media (max-width: 600px) {
+  .box-reservas {
+    display: none;
+  }
 }
 .box-reservas input {
   padding: 20px 20px;
@@ -572,7 +580,7 @@ video {
 @media (max-width: 600px) {
   .titulo-chasco {
     margin-top: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -684,6 +692,7 @@ video {
 }
 @media (max-width: 600px) {
   .chascomusapp {
+    padding: 0;
     width: 100%;
   }
 }
@@ -695,6 +704,11 @@ video {
 .chascomusapp img {
   width: 200px;
 }
+@media (max-width: 600px) {
+  .chascomusapp img {
+    width: 120px;
+  }
+}
 .chascomusapp h5 {
   text-transform: uppercase;
   color: #b46c51;
@@ -703,7 +717,7 @@ video {
 @media (max-width: 600px) {
   .chascomusapp h5 {
     font-size: 1.3em;
-    text-align: center;
+    text-align: start;
   }
 }
 .chascomusapp a {
@@ -740,6 +754,11 @@ video {
   color: white;
   text-shadow: grey 2px 2px 2px;
 }
+@media (max-width: 600px) {
+  .foto-reservas h1 {
+    font-size: 2.5em;
+  }
+}
 
 .contacto-main {
   display: flex;
@@ -749,6 +768,11 @@ video {
 .formulario-contacto {
   width: 50%;
   padding: 40px;
+}
+@media (max-width: 600px) {
+  .formulario-contacto {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
