@@ -1,36 +1,47 @@
-.bienvenida{
-    background-image: url(https://i.ibb.co/v1w6jTd/OLYMPUS-DIGITAL-CAMERA.jpg);
-    background-attachment: fixed;
-    height: calc(100vh - 70px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#bienvenida{
     display: flex;
-    justify-content: last baseline;
-    align-items: flex-end;
+    flex-direction: row;
+    height: calc(100vh - 70px);
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(https://i.ibb.co/0QRGLY9/OLYMPUS-DIGITAL-CAMERA.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+    
+    
+    
+    .box-portada{
+        background-color: nth($colores, 1);
+        width: 45%;
+        height: 50%;
+        padding: 70px 200px 70px 70px;
+        /* text-shadow: rgb(143, 142, 142) 2px 2px 2px; */
+        box-shadow: 0px 13px 12px -10px rgba(0,0,0,0.08);
 
 
-
-    h1{
-        @media (max-width:600px){
-        font-size: 2.9em;
-        }
-    }
-
-    .box{
-        flex-wrap: wrap;
-        width: 50%;
-        margin-left: 20px;
-        margin-bottom: 50px;
-        text-shadow: grey 2px 2px 2px;
-        /*border: 1px solid pink;*/
         
-        @media (max-width:600px){
-            width: 100%;
-            padding: 0px 10px;
+
+        h1{
+
+            font-size: 3em;
+            font-weight: 300;
+            text-align: start;
+            color: #fff
+            
         }
-     
+
+        p{
+            text-align: start;
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
     }
+
+
+
 }
 
 .welcome-container{
