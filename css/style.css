@@ -193,6 +193,11 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   align-items: flex-end;
 }
 @media (max-width: 600px) {
+  .bienvenida {
+    background-image: url(https://i.ibb.co/4TY2m8z/OLYMPUS-DIGITAL-CAMERA.jpg);
+  }
+}
+@media (max-width: 600px) {
   .bienvenida h1 {
     font-size: 2.9em;
   }
