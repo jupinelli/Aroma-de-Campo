@@ -234,7 +234,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 .welcome-container {
   width: 100%;
   display: flex;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 @media (max-width: 960px) {
   .welcome-container {
@@ -245,6 +245,17 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   width: 600px;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  margin-left: 40px;
+}
+.welcome-container .box-color {
+  background-color: #beb3a1;
+  position: absolute;
+  width: 615px;
+  height: 520px;
+  margin-left: 40px;
+  left: 32px;
+  top: 1125px;
 }
 .welcome-container .textoBienvenida {
   padding: 150px;
@@ -258,6 +269,10 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   color: #355d66;
+}
+
+.nuestrascabanas {
+  margin-top: 7%;
 }
 
 .card-title {

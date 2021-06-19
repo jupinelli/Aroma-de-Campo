@@ -70,16 +70,31 @@
 .welcome-container{
     width: 100%;
     display: flex;
-    background-color: #eee;
+    /* background-color: #eee; */
 
     @media (max-width:960px){
         display: none;
     }
 
+    
+
     div img{
         width: 600px;
         height: 100%;
         object-fit: cover;
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .box-color{
+        background-color: nth($colores, 4);
+        position: absolute;
+        width: 615px;
+        height: 520px;
+        margin-left: 40px;
+        left: 32px;
+        top: 1125px;
+
     }
 
     .textoBienvenida{
