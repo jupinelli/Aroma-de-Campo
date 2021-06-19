@@ -1,33 +1,40 @@
 .box-reservas{
     font-family: 'Roboto', sans-serif;
     display: flex;
-    background-color: #beb3a1; 
     color: #fff;
-    padding: 50px 30px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    height: 350px;
 
-    @media (max-width: 600px){
-        display: none;
+
+    div>a{
+        font-size: 1.1em;
+        margin-right: 20px;
+        padding: 20px;
     }
 
-    input{
-        padding: 20px 20px;
-        border: 0;
-        background-color: #beb3a1;
-        color: #fff;
+    .reservas-texto{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    button{
-        background-color: #beb3a1;
-        border: solid 2px #fff;
-        border-radius: 5px;
-        color: #fff;
-        font-family: 'Playfair Display', serif;
-        padding-left: 3px;
-        padding-right: 3px;
+    .reservas-texto1{
+        font-size: 1.5em;
+        color: #343a40;
+        font-weight: 350;
+
+        margin-bottom: 0;
     }
 
+    .reservas-texto2{
+        font-size: 1.5em;
+        color: nth($colores,2);
+        font-weight: 800;
+
+        margin-top: 0;
+    }
 
 }

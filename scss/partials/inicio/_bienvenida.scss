@@ -8,34 +8,57 @@
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: right;
-    
-    
+
+    @media (max-width:960px){
+        background-image: none;
+
+
+    }
+     
     
     .box-portada{
-        background-color: nth($colores, 1);
-        width: 45%;
+        background-color: #eee;
+        width: 43%;
         height: 50%;
-        padding: 70px 200px 70px 70px;
-        /* text-shadow: rgb(143, 142, 142) 2px 2px 2px; */
         box-shadow: 0px 13px 12px -10px rgba(0,0,0,0.08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
 
 
-        
+        @media (max-width:960px){
+            width: 100%;
+            font-size: 1em;
 
-        h1{
-
-            font-size: 3em;
-            font-weight: 300;
-            text-align: start;
-            color: #fff
             
+    
+    
         }
 
-        p{
+        .home-tittle{
+            font-size: 2.2em;
+            color: nth($colores, 3);
+            font-weight: 300;
             text-align: start;
-            color: #fff;
+            
+
+            @media (max-width: 960px){
+                font-size: 2.5em;
+            }
+        }
+
+
+
+        p{
+            
+            color: #343a40;
             font-size: 1.5em;
             font-weight: 300;
+
+
+
         }
 
     }

@@ -192,23 +192,41 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   background-size: 60%;
   background-position: right;
 }
-#bienvenida .box-portada {
-  background-color: #355d66;
-  width: 45%;
-  height: 50%;
-  padding: 70px 200px 70px 70px;
-  /* text-shadow: rgb(143, 142, 142) 2px 2px 2px; */
-  box-shadow: 0px 13px 12px -10px rgba(0, 0, 0, 0.08);
+@media (max-width: 960px) {
+  #bienvenida {
+    background-image: none;
+  }
 }
-#bienvenida .box-portada h1 {
-  font-size: 3em;
+#bienvenida .box-portada {
+  background-color: #eee;
+  width: 43%;
+  height: 50%;
+  box-shadow: 0px 13px 12px -10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+@media (max-width: 960px) {
+  #bienvenida .box-portada {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+#bienvenida .box-portada .home-tittle {
+  font-size: 2.2em;
+  color: #0c3e4d;
   font-weight: 300;
   text-align: start;
-  color: #fff;
+}
+@media (max-width: 960px) {
+  #bienvenida .box-portada .home-tittle {
+    font-size: 2.5em;
+  }
 }
 #bienvenida .box-portada p {
-  text-align: start;
-  color: #fff;
+  color: #343a40;
   font-size: 1.5em;
   font-weight: 300;
 }
@@ -361,32 +379,34 @@ h6 {
 .box-reservas {
   font-family: "Roboto", sans-serif;
   display: flex;
-  background-color: #beb3a1;
   color: #fff;
-  padding: 50px 30px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  height: 350px;
 }
-@media (max-width: 600px) {
-  .box-reservas {
-    display: none;
-  }
+.box-reservas div > a {
+  font-size: 1.1em;
+  margin-right: 20px;
+  padding: 20px;
 }
-.box-reservas input {
-  padding: 20px 20px;
-  border: 0;
-  background-color: #beb3a1;
-  color: #fff;
+.box-reservas .reservas-texto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.box-reservas button {
-  background-color: #beb3a1;
-  border: solid 2px #fff;
-  border-radius: 5px;
-  color: #fff;
-  font-family: "Playfair Display", serif;
-  padding-left: 3px;
-  padding-right: 3px;
+.box-reservas .reservas-texto1 {
+  font-size: 1.5em;
+  color: #343a40;
+  font-weight: 350;
+  margin-bottom: 0;
+}
+.box-reservas .reservas-texto2 {
+  font-size: 1.5em;
+  color: #b46c51;
+  font-weight: 800;
+  margin-top: 0;
 }
 
 /*PAGINA NUESTRAS CABANAS*/
