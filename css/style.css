@@ -194,12 +194,12 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 @media (max-width: 960px) {
   #bienvenida {
-    /*         background-image: url(https://i.ibb.co/z8Yk5vH/OLYMPUS-DIGITAL-CAMERA.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100vh;
-            background-position: center; */
-    background-image: none;
+    background-image: url(https://i.ibb.co/SNQpNbm/portada-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: center;
+    /* background-image: none; */
   }
 }
 #bienvenida .box-portada {
