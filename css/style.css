@@ -276,7 +276,12 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 
 .nuestrascabanas {
-  margin-top: 3%;
+  margin-top: 7%;
+}
+@media (max-width: 600px) {
+  .nuestrascabanas {
+    margin-top: 3%;
+  }
 }
 
 .card-title {

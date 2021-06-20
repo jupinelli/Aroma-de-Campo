@@ -1,5 +1,9 @@
 .nuestrascabanas{
-  margin-top: 3%;
+  margin-top: 7%;
+
+  @media (max-width:600px){
+    margin-top: 3%;
+  }
 }
 .card-title {
   text-transform: uppercase;
