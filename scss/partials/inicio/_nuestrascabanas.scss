@@ -1,5 +1,5 @@
 .nuestrascabanas{
-  margin-top: 7%;
+  margin-top: 3%;
 }
 .card-title {
   text-transform: uppercase;
@@ -14,8 +14,16 @@
 .text-color {
   color: rgb(68, 66, 66);
   font-family: "Roboto";
+  
 }
+
 
 .card {
   height: 750px;
+
+  @media (max-width:600px){
+    height: 670px;
+    margin-bottom: 10px;
+  }
 }
+

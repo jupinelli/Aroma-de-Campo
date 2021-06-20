@@ -194,7 +194,11 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 @media (max-width: 960px) {
   #bienvenida {
-    background-image: none;
+    background-image: url(https://i.ibb.co/0QRGLY9/OLYMPUS-DIGITAL-CAMERA.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
   }
 }
 #bienvenida .box-portada {
@@ -272,7 +276,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 
 .nuestrascabanas {
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 .card-title {
@@ -292,6 +296,12 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 
 .card {
   height: 750px;
+}
+@media (max-width: 600px) {
+  .card {
+    height: 670px;
+    margin-bottom: 10px;
+  }
 }
 
 .servicios {
