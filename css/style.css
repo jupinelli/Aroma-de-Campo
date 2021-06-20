@@ -16,10 +16,13 @@ main {
 }
 
 .whatsappButton a img {
-  width: 100px;
+  width: 70px;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
+}
+.whatsappButton a img:hover {
+  width: 90px;
 }
 
 .btn {
