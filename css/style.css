@@ -825,6 +825,10 @@ video {
   display: flex;
   flex-direction: row;
 }
+.contacto-main .form-label {
+  color: #343a40;
+  font-family: "roboto";
+}
 
 .formulario-contacto {
   width: 50%;

@@ -28,6 +28,11 @@
     display: flex;
     flex-direction: row;
 
+    .form-label{
+        color: nth($colores, 5);
+        font-family: 'roboto';
+    }
+
 }
 
 .formulario-contacto{
