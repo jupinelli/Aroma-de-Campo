@@ -564,6 +564,12 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
     padding-left: 10px;
   }
 }
+@media (min-width: 600px) and (max-width: 960px) {
+  .iconos-container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
 .iconos-container .icon-card {
   width: 25%;
   display: flex;
@@ -578,6 +584,14 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
     width: 100%;
   }
 }
+.iconos-container .icon-card h4 {
+  text-align: center;
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  .iconos-container .icon-card h4 {
+    font-size: 1.2em;
+  }
+}
 .iconos-container .icon-card img {
   margin-bottom: 15px;
   width: 50px;
@@ -588,6 +602,13 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   text-align: center;
   font-family: "Roboto";
   color: #355d66;
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  .iconos-container .icon-card p {
+    font-size: 0.7em;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .gallery-grid .gallery {
@@ -612,6 +633,12 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
     /*para separar entre foto y foto*/
     row-gap: 0.5em;
     grid-auto-rows: 300px;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  .gallery-grid .gallery {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 .gallery-grid .gallery .foto {

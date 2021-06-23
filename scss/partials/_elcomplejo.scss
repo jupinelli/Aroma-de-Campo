@@ -14,6 +14,11 @@
         padding-left: 10px;
     }
 
+    @media (min-width: 600px) and (max-width:960px){
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
     .icon-card{
         width: 25%;
         display: flex;
@@ -22,6 +27,7 @@
         align-items: center;
         padding: 10px;
         margin-bottom: 15px;
+
         
 
         @media(max-width:600px){
@@ -30,8 +36,12 @@
 
         }
 
-        div{
-            
+        h4{
+            text-align: center;
+            @media (min-width: 600px) and (max-width:960px){
+
+                font-size: 1.2em;
+            }
         }
 
         img{
@@ -46,6 +56,14 @@
             text-align: center;
             font-family: nth($fonts, 1);
             color: nth($colores, 1);
+
+
+            @media (min-width: 600px) and (max-width:960px){
+
+                font-size: 0.7em;
+                padding-right: 0;
+                padding-left: 0;
+            }
         }
     }
 
@@ -72,6 +90,11 @@
             column-gap: 0.5em; /*para separar entre foto y foto*/
             row-gap: 0.5em;
             grid-auto-rows: 300px;
+        }
+
+        @media (min-width: 600px) and (max-width:960px){
+            padding-right: 50px;
+            padding-left: 50px;
         }
 
         .foto{
