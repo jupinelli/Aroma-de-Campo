@@ -195,14 +195,19 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   background-size: 60%;
   background-position: right;
 }
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   #bienvenida {
-    /*background-image: url(https://i.ibb.co/z8Yk5vH/OLYMPUS-DIGITAL-CAMERA.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vh;
-    background-position: center; */
     background-image: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  #bienvenida {
+    height: 50vh;
+  }
+}
+@media (min-width: 960px) and (max-width: 1264px) {
+  #bienvenida {
+    height: 50vh;
   }
 }
 #bienvenida .box-portada {
@@ -217,10 +222,15 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   padding: 40px;
   opacity: 95%;
 }
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   #bienvenida .box-portada {
     width: 100%;
     font-size: 1em;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  #bienvenida .box-portada {
+    width: 50%;
   }
 }
 #bienvenida .box-portada .home-tittle {
@@ -231,13 +241,14 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 @media (max-width: 960px) {
   #bienvenida .box-portada .home-tittle {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 #bienvenida .box-portada p {
   color: #343a40;
   font-size: 1.5em;
   font-weight: 300;
+  text-align: center;
 }
 
 .welcome-container {
@@ -250,12 +261,22 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
     display: none;
   }
 }
+@media (min-width: 960px) and (max-width: 1264px) {
+  .welcome-container {
+    background-color: #eee;
+  }
+}
 .welcome-container div img {
   width: 600px;
   height: 100%;
   object-fit: cover;
   position: relative;
   margin-left: 40px;
+}
+@media (min-width: 960px) and (max-width: 1264px) {
+  .welcome-container div img {
+    display: none;
+  }
 }
 .welcome-container .box-color {
   background-color: #beb3a1;
@@ -265,6 +286,11 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   margin-left: 40px;
   left: 30px;
   top: 1125px;
+}
+@media (min-width: 960px) and (max-width: 1264px) {
+  .welcome-container .box-color {
+    display: none;
+  }
 }
 .welcome-container .textoBienvenida {
   padding: 150px;

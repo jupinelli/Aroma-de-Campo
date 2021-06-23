@@ -9,14 +9,20 @@
     background-size: 60%;
     background-position: right; 
 
-    @media (max-width:960px){
-        /*background-image: url(https://i.ibb.co/z8Yk5vH/OLYMPUS-DIGITAL-CAMERA.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100vh;
-        background-position: center; */
-
+    @media (max-width:600px){
         background-image: none;
+
+    }
+
+    @media (min-width: 600px) and (max-width:960px){
+
+        height: 50vh;
+    }
+
+
+    @media (min-width:960px) and (max-width:1264px){
+        height: 50vh;
+        
     }
      
     
@@ -33,14 +39,19 @@
         opacity: 95%;
 
 
-        @media (max-width:960px){
+
+
+        @media (max-width:600px){
             width: 100%;
             font-size: 1em;
-            
+             
+    
+        }
+
+        @media (min-width: 600px) and (max-width:960px){
+            width: 50%;
 
             
-    
-    
         }
 
         .home-tittle{
@@ -51,7 +62,7 @@
             
 
             @media (max-width: 960px){
-                font-size: 2.5em;
+                font-size: 2em;
             }
         }
 
@@ -62,6 +73,7 @@
             color: #343a40;
             font-size: 1.5em;
             font-weight: 300;
+            text-align: center;
            
 
 
@@ -83,6 +95,10 @@
         display: none;
     }
 
+    @media (min-width:960px) and (max-width:1264px){
+        background-color: #eee;
+    }
+
     
 
     div img{
@@ -91,6 +107,10 @@
         object-fit: cover;
         position: relative;
         margin-left: 40px;
+
+        @media (min-width:960px) and (max-width:1264px){
+            display: none;
+        }
     }
 
     .box-color{
@@ -101,6 +121,10 @@
         margin-left: 40px;
         left: 30px;
         top: 1125px;
+
+        @media (min-width:960px) and (max-width:1264px){
+            display: none;
+        }
 
     }
 
