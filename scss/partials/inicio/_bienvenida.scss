@@ -10,8 +10,12 @@
     background-position: right; 
 
     @media (max-width:600px){
-        background-image: none;
-
+        background-image: url(https://i.ibb.co/GC5j9MQ/Sin-t-tulo-2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vh 100vh;
+        background-position: right;
+        align-items: flex-end;
+        
     }
 
     @media (min-width: 600px) and (max-width:960px){
@@ -43,13 +47,12 @@
 
         @media (max-width:600px){
             width: 100%;
-            font-size: 1em;
-             
-    
+
         }
 
         @media (min-width: 600px) and (max-width:960px){
             width: 50%;
+            
 
             
         }
