@@ -200,7 +200,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
     background-image: url(https://i.ibb.co/GC5j9MQ/Sin-t-tulo-2.jpg);
     background-repeat: no-repeat;
     background-size: 100vh 100vh;
-    background-position: right;
+    background-position: center;
     align-items: flex-end;
   }
 }
@@ -536,6 +536,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 .imagenes-container img {
   width: 33.3333333333%;
   transition: transform 0.9s;
+  padding: 5px;
 }
 .imagenes-container img:hover {
   transform: scale(1.1);

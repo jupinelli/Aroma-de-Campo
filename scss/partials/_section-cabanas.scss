@@ -58,6 +58,7 @@
     padding-left: 100px;
     padding-right: 100px;
 
+
     @media (max-width:600px){
         display: flex;
         flex-wrap: wrap;
@@ -69,6 +70,7 @@
     img{
         width: $ancho-base / 3;
         transition: transform .9s;
+        padding: 5px;
 
         &:hover{
             transform: scale(1.1); 
