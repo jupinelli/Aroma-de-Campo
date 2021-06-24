@@ -576,8 +576,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 5px;
 }
 @media (max-width: 600px) {
   .iconos-container .icon-card {
@@ -601,13 +600,18 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
   padding-left: 15px;
   text-align: center;
   font-family: "Roboto";
-  color: #355d66;
+  color: #343a40;
 }
 @media (min-width: 600px) and (max-width: 960px) {
   .iconos-container .icon-card p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+@media (min-width: 960px) and (max-width: 1264px) {
+  .iconos-container .icon-card p {
+    font-size: 0.8EM;
   }
 }
 
