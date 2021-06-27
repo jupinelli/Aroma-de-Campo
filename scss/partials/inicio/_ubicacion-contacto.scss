@@ -34,6 +34,8 @@
 
 }
 
+
+
 .contact-form{
     font-family: 'Roboto', sans-serif;
     color: #0c3e4d;
@@ -45,5 +47,13 @@
 
     @media (max-width:600px){
         width: 100%;
+    }
+
+    h3{
+        padding-top: 20px;
+    }
+
+    p, label{
+        color: nth($colores, 5);
     }
 }
