@@ -197,7 +197,7 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 }
 @media (max-width: 600px) {
   #bienvenida {
-    background-image: url(https://i.ibb.co/GC5j9MQ/Sin-t-tulo-2.jpg);
+    background-image: url(https://i.ibb.co/TTyjCJj/OLYMPUS-DIGITAL-CAMERA.jpg);
     background-repeat: no-repeat;
     background-size: 100vh 100vh;
     background-position: center;
@@ -295,6 +295,11 @@ footer .footer-container .suscribe, footer .footer-container .footer-consultas {
 @media (min-width: 960px) and (max-width: 1264px) {
   .welcome-container .box-color {
     display: none;
+  }
+}
+@media (min-width: 1800px) {
+  .welcome-container .box-color {
+    top: 1370px;
   }
 }
 .welcome-container .textoBienvenida {
