@@ -26,6 +26,17 @@
     <meta property="og:image:widht" content="200px">
     <meta property="og:url" content="https://aroma-de-campo-chascomus.000webhostapp.com/reservas.html">
     <meta property="og:description" content="Hermosas cabañas con pileta a pocos metros de la Laguna de Chascomus">
+    
+    <script src="email.js"></script>
+
+    <!--EMAILJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_jSNxjMil0qvtLZOrhqsn5");
+    })();
+    </script>
+    
     <title>Reservas</title>
 </head>
 <body>
@@ -83,45 +94,64 @@
         </div>
 
         <div>
-          <label for="exampleFormControlInput8" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="exampleFormControlInput8">
+          <label for="exampleFormControlInput5" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="formName" required>
         
 
         </div>
 
         <div>
-          <label for="exampleFormControlInput5" class="form-label">Numero de telefono</label>
-          <input type="text" class="form-control" id="exampleFormControlInput5">
+          <label for="exampleFormControlInput6" class="form-label">Numero de telefono</label>
+          <input type="text" class="form-control" id="phoneNumber" required>
         
         </div>
 
         <div class="mb-3">
-          <label for="exampleFormControlInput9" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput9">
+          <label for="exampleFormControlInput7" class="form-label">Email</label>
+          <input type="email" class="form-control" id="formEmail" required>
         </div>
 
         <div class="mb-3">
-          <label for="exampleFormControlInput6" class="form-label">Fecha de ingreso</label>
-          <input type="date" class="form-control" id="exampleFormControlInput6">
+          <label for="fechaIn" class="form-label">Fecha de ingreso</label>
+          <input type="date" class="form-control" id="fechaIn">
 
-          <label for="exampleFormControlInput7" class="form-label">Fecha de salida</label>
-          <input type="date" class="form-control" id="exampleFormControlInput7">
+          <label for="fechaOut" class="form-label">Fecha de salida</label>
+          <input type="date" class="form-control" id="fechaOut">
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
         </div>
 
         <div>
-          <button type="submit" class="btn mb-3">Enviar</button>
+          <button onclick="sendMail()" type="submit" class="btn mb-3"  data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
         </div>
       </div>
 
 
       <!--FIN FORM DE CONTACTO-->
       
-      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Gracias por tu mensaje, nos comunicaremos a la brevedad.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                                
+      <!--FIN MODAL-->
+
 
     </main>
 
