@@ -2,7 +2,7 @@
 function sendMail(params){
     var tempParams = {
         formName:document.getElementById("formName").value, //lo que esta con "" es el id que tiene el input en html
-        phoneNumber:document.getElementById("phoneNumber").value, // phoneNumber es como esta en el template de emailjs
+        phoneNumber:document.getElementById("phoneNumber").value, // el 1er phoneNumber es como esta en el template de emailjs
         message:document.getElementById("message").value,
         formEmail:document.getElementById("formEmail").value,
         fechaIn:document.getElementById("fechaIn").value,
