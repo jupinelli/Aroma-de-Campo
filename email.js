@@ -1,8 +1,8 @@
 
 function sendMail(params){
     var tempParams = {
-        formName:document.getElementById("formName").value,
-        phoneNumber:document.getElementById("phoneNumber").value,
+        formName:document.getElementById("formName").value, //lo que esta con "" es el id que tiene el input en html
+        phoneNumber:document.getElementById("phoneNumber").value, // phoneNumber es como esta en el template de emailjs
         message:document.getElementById("message").value,
         formEmail:document.getElementById("formEmail").value,
         fechaIn:document.getElementById("fechaIn").value,
@@ -10,7 +10,9 @@ function sendMail(params){
 
     };
 
-    emailjs.send(`gmail`,`template_nuc679u`,tempParams)
+    //esta funcion es para que se borre todo cuando apretan en enviar
+
+    emailjs.send(`gmail`,`template_nuc679u`,tempParams) //en el parentesis: (service id, template id, var de arriba)
     .then(function(res){
         console.log("secces",res.status);
         formName.value = ""
