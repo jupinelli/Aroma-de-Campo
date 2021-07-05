@@ -111,7 +111,8 @@
         object-fit: cover;
         position: relative;
         margin-left: 40px;
-        box-shadow: 0px 13px 12px -10px rgba(0,0,0,0.1);
+        box-shadow: 25px 25px 0px 0px #beb3a1;
+    
 
         @media (min-width:960px) and (max-width:1264px){
             display: none;
@@ -121,27 +122,7 @@
 
     }
 
-    .box-color{
-        background-color: nth($colores, 4);
-        position: absolute;
-        width: 610px;
-        height: 520px;
-        margin-left: 40px;
-        left: 30px;
-        top: 1125px;
-        box-shadow: 0px 13px 12px -10px rgba(0,0,0,0.1);
 
-        @media (min-width:960px) and (max-width:1264px){
-            display: none;
-        }
-
-        @media (min-width: 1800px) {
-            top: 1370px;
-        }
-
-
-
-    }
 
     .textoBienvenida{
         padding: 150px;
