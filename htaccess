@@ -1,5 +1,7 @@
+redirect 301 https://www.aromadecampochascomus.com.ar/ https://aromadecampochascomus.com.ar/
 ErrorDocument 404 /error404.html
 
 # HTID:17748354: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17748354:
+
